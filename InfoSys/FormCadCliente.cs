@@ -214,9 +214,8 @@ namespace InfoSys
                     text_CodExterno.Text = "";
                     text_Supervisor.Text = "";
                     text_Link.Text = "";
-                    text_Informacoes.Text = "";
-
-
+                    text_Informacoes.Text = "";                    
+                    id = 0;
                     ListaRegistros();
                 }
             }
@@ -267,6 +266,7 @@ namespace InfoSys
                 {
                     ExcluirRegistro();
                     ListaRegistros();
+                    id = 0;
                 }
             }
             
@@ -281,20 +281,20 @@ namespace InfoSys
         }
 
         private void btn_limpar_Click(object sender, EventArgs e)
-        {
-            
+        {            
             
             if(id > 0)
             {
-                id = 0;
+                
                 text_nome.Text = "";
                 text_CNPJ.Text = "";
                 text_CodExterno.Text = "";
                 text_Supervisor.Text = "";
                 text_Link.Text = "";
                 text_Informacoes.Text = "";
+                id = 0;
 
-                
+
             }
 
         }
